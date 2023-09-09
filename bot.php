@@ -53,7 +53,7 @@ function sendmessage($chat_id, $text, $mode = null, $message_id = null, $keyboar
         'parse_mode' => $mode,
         'reply_to_message_id' => $message_id,
         'reply_markup' => $keyboard,
-        'disable_web_page_preview' => true
+        'disable_web_page_preview' => false
     ]);
 }
 function forwardmessage($id, $chat_id, $message_id) {
