@@ -44,7 +44,7 @@ function  getUserProfilePhotos($from_id) {
     $result = file_get_contents($url);
     $result = json_decode ($result);
     $result = $result->result;
-    return $result;
+    return $result
 }
 function sendmessage($chat_id, $text, $mode = null, $message_id = null, $keyboard = null) {
     WSBot('sendmessage', [
