@@ -47,7 +47,7 @@ function  getUserProfilePhotos($from_id) {
     return $result
 }
 function sendmessage($chat_id, $text, $mode = null, $message_id = null, $keyboard = null) {
-    WSBot('sendmessage', [
+    WSBot('sendmessage', 
         'chat_id' => $chat_id,
         'text' => $text,
         'parse_mode' => $mode,
