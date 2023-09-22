@@ -119,7 +119,7 @@ if (isset($update->callback_query)) {
     $fromid = $callback_query->from->id;
     $messageid = $callback_query->message->message_id;
     $firstname = $callback_query->from->first_name;
-    $lastname = $callback_query->from->last_name;
+    $lastname = $callback_query->from->last_name
     $cusername = $callback_query->from->username;
     $membercall = $callback_query->id;
     $cproxy = file_get_contents("channel.txt");
