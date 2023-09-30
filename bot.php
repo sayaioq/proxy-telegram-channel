@@ -115,6 +115,9 @@ if (isset($update->callback_query)) {
     $callback_query = $update->callback_query;
     $data = $callback_query->data;
     $tc = $callback_query->message->chat->type;
+    $colors = ["red", "green", "blue"];
+    foreach ($colors as $color) {
+    echo "$color<br>";
     $chatid = $callback_query->message->chat->id;
     $fromid = $callback_query->from->id;
     $messageid = $callback_query->message->message_id;
