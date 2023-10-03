@@ -68,6 +68,7 @@ function sendphoto($chat_id, $photo, $caption = null, $mode = null, $message_id 
         'chat_id' => $chat_id,
         'photo' => $photo,
         'caption' => $caption,
+	 $next_week = strtotime("+7 days");
         'parse_mode' => $mode,
         'reply_to_message_id' => $message_id,
         'reply_markup' => $keyboard
