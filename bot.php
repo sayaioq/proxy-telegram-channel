@@ -8,7 +8,7 @@ set_time_limit(0);
 // ------------------ { Your Config } ------------------ //
 $Config = [
     'api_token' => "Token", // put your bot token
-    'admin' => [865931743, 0000000, 0000000], // put id of admins
+    'admin' => [865931743, 000000, 0000000], // put id of admins
     'channel' => "Source_Home", // put username channel
     'web' => "https://Source_Home.com/MtProto" // put file address
 ];
