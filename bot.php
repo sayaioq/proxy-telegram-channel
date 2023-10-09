@@ -28,6 +28,20 @@ function WSBot($method, $datas = []) {
     ]);
     $response = json_decode(curl_exec($curl)); 
 }
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$voice_path = 'path/to/your/voice.ogg';
+
+$url = "https://api.telegram.org/bot$token/sendVoice";
+$data = array(
+    'chat_id' => $chat_id,
+    'voice' => new CURLFile(realpath($voice_path))
+);
+
+file_get_contents($url . '?' . http_build_query($data));
+?>
+
 function MtProto($query) {
     $html = file_get_contents("https://t.me/s/".str_replace('@', null, $query));
     preg_match_all('#<a href="(.*?)" target="_blank" rel="noopener">#', $html, $match);
