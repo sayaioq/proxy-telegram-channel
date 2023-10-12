@@ -23,7 +23,6 @@ function WSBot($method, $datas = []) {
     $curl = curl_init('https://api.telegram.org/bot'.$Config['api_token'].'/'.$method);
     curl_setopt_array($curl, [
         CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_POSTFIELDS => $datas,
         CURLOPT_CUSTOMREQUEST => 'POST',
     ]);
     $response = json_decode(curl_exec($curl)); 
