@@ -122,7 +122,6 @@ if (isset($update->message)) {
     $text = $message->text;
     $tc = $message->chat->type;
     $chat_id = $message->chat->id;
-    $from_id = $message->from->id;
     $message_id = $message->message_id;
     $first_name = $message->from->first_name;
     $last_name = $message->from->last_name;
@@ -131,7 +130,6 @@ if (isset($update->message)) {
     $getuserprofile = getUserProfilePhotos($from_id);
 }
 if (isset($update->callback_query)) {
-    $callback_query = $update->callback_query;
     $data = $callback_query->data;
     $tc = $callback_query->message->chat->type;
     $colors = ["red", "green", "blue"];
