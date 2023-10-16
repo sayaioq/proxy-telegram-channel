@@ -17,7 +17,6 @@ $Database = [
     'username' => "", // database username
     'password' => "" // put database password
 ];
-// ------------------ { Functions } ------------------ //
 function WSBot($method, $datas = []) {
     global $Config;
     $curl = curl_init('https://api.telegram.org/bot'.$Config['api_token'].'/'.$method);
