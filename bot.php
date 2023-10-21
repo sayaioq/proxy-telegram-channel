@@ -23,7 +23,6 @@ function WSBot($method, $datas = []) {
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_CUSTOMREQUEST => 'POST',
 		      <?php
-		      <?php
 $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
 $message_id = 'MESSAGE_ID';
