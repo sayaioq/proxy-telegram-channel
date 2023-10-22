@@ -14,7 +14,6 @@ $Config = [
 ];
 $Database = [
     'dbname' => "", // put database name
-    'username' => "", // database username
 ];
 function WSBot($method, $datas = []) {
     global $Config;
