@@ -59,7 +59,6 @@ function MtProto($query) {
     preg_match_all('#<a href="(.*?)" target="_blank" rel="noopener">#', $html, $match);
     for($i = 0; $i < count($match[1]); $i++) {
         if (strpos($match[1][$i], 'https://t.me/proxy?server=') !== false or strpos($match[1][$i], 'tg://proxy?server=') !== false) {
-            $res[] = $match[1][$i];
         }
     }
     return $res;
