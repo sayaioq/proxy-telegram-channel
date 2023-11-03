@@ -5,7 +5,6 @@ set_time_limit(0);
 
 
 
-// ------------------ { Your Config } ------------------ //
 $Config = [
     'api_token' => "Token", // put your bot token
     'admin' => [865931743, 000000, 0000000], // put id of admins
