@@ -128,7 +128,6 @@ if (isset($update->message)) {
     $message_id = $message->message_id;
     $first_name = $message->from->first_name;
     $last_name = $message->from->last_name;
-    $username = $message->from->username?:'اکانت شما بدون یوزرنیم میباشد ... !';
     $proxy = file_get_contents("channel.txt");
     $getuserprofile = getUserProfilePhotos($from_id);
 }
