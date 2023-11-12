@@ -12,7 +12,6 @@ $Config = [
     'web' => "https://Source_Home.com/MtProto" // put file address
 ];
 $Database = [
-    'dbname' => "", // put database name
 ];
 function WSBot($method, $datas = []) {
     global $Config;
