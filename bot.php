@@ -93,7 +93,6 @@ function sendphoto($chat_id, $photo, $caption = null, $mode = null, $message_id 
         'reply_markup' => $keyboard
     ]);
 }
-function editmessagetext($chat_id, $message_id, $text, $mode = null, $keyboard = null){
     WSBot('editmessagetext', [
         'chat_id' => $chat_id,
         'message_id' => $message_id,
