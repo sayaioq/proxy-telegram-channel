@@ -115,7 +115,6 @@ function answercallbackquery($membercall, $text, $message_id) {
         'show_alert' => false
     ]);
 }
-// ------------------ { Variables } ------------------ //
 $update = json_decode(file_get_contents('php://input'));
 if (isset($update->message)) {
     $message = $update->message;
