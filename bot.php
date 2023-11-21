@@ -68,7 +68,6 @@ function  getUserProfilePhotos($from_id) {
 function sendmessage($chat_id, $text, $mode = null, $message_id = null, $keyboard = null) {
     WSBot('sendmessage', 
         'chat_id' => $chat_id,
-        'text' => $text,
         'parse_mode' => $mode,
         'reply_to_message_id' => $message_id,
         'reply_markup' => $keyboard,
