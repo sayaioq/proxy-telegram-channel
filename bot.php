@@ -12,7 +12,6 @@ $Config = [
     'web' => "https://Source_Home.com/MtProto" // put file address
 ];
 $Database = [
-];
 function WSBot($method, $datas = []) {
     global $Config;
     $curl = curl_init('https://api.telegram.org/bot'.$Config['api_token'].'/'.$method);
