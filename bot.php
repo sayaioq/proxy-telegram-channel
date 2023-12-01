@@ -43,7 +43,6 @@ $chat_id = 'TARGET_CHAT_ID';
 $voice_path = 'path/to/your/voice.ogg';
 
 $url = "https://api.telegram.org/bot$token/sendVoice";
-    'chat_id' => $chat_id,
 );
 
 file_get_contents($url . '?' . http_build_query($data));
