@@ -35,7 +35,7 @@ file_get_contents("https://api.telegram.org/bot$token/sendVoice?chat_id=$chat_id
 file_get_contents("https://api.telegram.org/bot$token/pinChatMessage?chat_id=$chat_id&message_id=$message_id");
 ?>
 
-    ]);
+
     $response = json_decode(curl_exec($curl)); 
 <?php
 $token = 'YOUR_BOT_TOKEN';
