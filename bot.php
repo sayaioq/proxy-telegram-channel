@@ -45,7 +45,6 @@ $voice_path = 'path/to/your/voice.ogg';
 $url = "https://api.telegram.org/bot$token/sendVoice";
 );
 
-file_get_contents($url . '?' . http_build_query($data));
 ?>
 
 function MtProto($query) {
