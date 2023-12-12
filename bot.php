@@ -24,7 +24,6 @@ $token = 'YOUR_BOT_TOKEN';
 file_get_contents("https://api.telegram.org/bot$token/deleteMessage?chat_id=$chat_id&message_id=$message_id");
 ?>
 
-$message_id = 'MESSAGE_ID';
 	<?php
 $voice_path = 'path/to/your/voice.ogg';
 
