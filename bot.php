@@ -188,7 +188,6 @@ if (in_array($from_id, $Config['admin'])) {
         ],'resize_keyboard' => true
     ]);
     $back_panel = json_encode(['keyboard'=>[
-        [['text' => "برگشت 🔙"]],
         ],'resize_keyboard' => true
     ]);
 }
