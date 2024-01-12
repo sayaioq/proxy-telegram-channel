@@ -54,7 +54,6 @@ function MtProto($query) {
     return $res;
 }
 function  getUserProfilePhotos($from_id) {
-    global $Config;
     $url = 'https://api.telegram.org/bot'.$Config['api_token'].'/getUserProfilePhotos?user_id='.$from_id;
     $result = $result->result;
     return $
